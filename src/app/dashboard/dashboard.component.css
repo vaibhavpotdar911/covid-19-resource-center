@@ -62,10 +62,20 @@
     font-size: larger;
     font-weight: 700;
     margin-top: -5px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 .card-data {
     color: white;
     text-align: center;
     font-weight: 700;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
+
+.new-data-white {
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+

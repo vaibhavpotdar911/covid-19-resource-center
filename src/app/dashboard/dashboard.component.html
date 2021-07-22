@@ -9,21 +9,38 @@
     <div class="card confirmed-card column">
         <fa-icon [icon]="faHospital" class="card-icons"></fa-icon>
         <h4 class="heading-center">Confirmed</h4>
-        <h2 class="card-data">8356872894</h2>
+        <h2 class="card-data">{{ confirmed }}</h2>
+        <div class="new-data-white">
+            <fa-icon [icon]="faArrowUp"></fa-icon>
+            <span class="card-data new-data-white"> {{ new_confirmed }}</span>
+        </div>
+        
     </div>
     <div class="card active-card column">
         <fa-icon [icon]="faPlusSquare" class="card-icons"></fa-icon>
         <h4 class="heading-center">Active</h4>
-        <h2 class="card-data">8356872894</h2>
+        <h2 class="card-data">{{ active }}</h2>
+        <div class="new-data-white">
+            <fa-icon [icon]="faArrowUp"></fa-icon>
+            <span class="card-data new-data-white"> {{ new_confirmed }}</span>
+        </div>
     </div>
     <div class="card recovered-card column">
         <fa-icon [icon]="faHeartBeat" class="card-icons"></fa-icon>
         <h4 class="heading-center">Recovered</h4>
-        <h2 class="card-data">8356872894</h2>
+        <h2 class="card-data">{{ recovered }}</h2>
+        <div class="new-data-white">
+            <fa-icon [icon]="faArrowUp"></fa-icon>
+            <span class="card-data new-data-white"> {{ new_recovered }}</span>
+        </div>
     </div>
     <div class="card deaths-card column">
         <fa-icon [icon]="faExclamationTriangle" class="card-icons"></fa-icon>
         <h4 class="heading-center">Deaths</h4>
-        <h2 class="card-data">8356872894</h2>
+        <h2 class="card-data">{{ deaths }}</h2>
+        <div class="new-data-white">
+            <fa-icon [icon]="faArrowUp"></fa-icon>
+            <span class="card-data new-data-white"> {{ new_deaths }}</span>
+        </div>
     </div>
 </div>
