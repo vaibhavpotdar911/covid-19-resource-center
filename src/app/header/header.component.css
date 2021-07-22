@@ -1,0 +1,43 @@
+.header{
+    display: flex;
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+
+.brand {
+    margin-left: 10%;
+    margin-top: 15px;
+}
+
+.brand-logo-div {
+    vertical-align: middle;
+    align-items: center;
+}
+
+.brand-logo {
+    height: 50px;
+    width: 50px;
+}
+
+.brand-name {
+    font-weight: 700;
+    font-size: larger;
+    position: absolute;
+    top: 25px;
+    padding-left: 15px;
+    color: white;
+}
+
+.buttons{
+    margin-right: 10%;
+    margin-top: 20px;
+}
+
+.button{
+    padding: 10px;
+    padding-left: 25px;   
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
