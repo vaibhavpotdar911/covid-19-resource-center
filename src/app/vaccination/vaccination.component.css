@@ -5,3 +5,67 @@
     padding-bottom: 150px;
     font-weight: bold;
 }
+
+.breadcrumbs {
+    flex: 1 1 auto;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+
+.breadcrumb-label {
+    position: relative;
+    top: -8px;
+    padding-left: 10px;
+    font-size: larger;
+    font-weight: 500;
+    color: rgba(56, 56, 56, 0.7);
+}
+
+.cards-container {
+    padding-top: 10px;
+    margin: 0px auto;
+}
+
+.card{
+    margin: 10px 10px 10px 10px;
+    height: 150px;
+    width: 280px;
+    border-radius: 15px;
+    border-width: 0px;
+}
+
+.population-card {
+    background-color: rgba(146, 146, 146,0.7);
+}
+
+.vaccines-card {
+    background-color: rgba(46, 209, 168, 0.7);
+}
+
+.fully-card {
+    background-color: rgba(0, 197, 0, 0.7);
+}
+
+.partial-card {
+    background-color: rgba(110, 110, 245, 0.7);
+}
+
+.card-icons {
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.heading-center {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: larger;
+    font-weight: 700;
+    margin-top: -5px;
+}
+
+.card-data {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+}

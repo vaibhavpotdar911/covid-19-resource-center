@@ -1,1 +1,29 @@
 <h1 class="title">{{ title }}</h1>
+
+<div class="breadcrumbs">
+    <fa-icon [icon]="faGlobe" class="card-icons"></fa-icon>
+    <span class="breadcrumb-label">Worldwide Vaccination Data</span>
+</div>
+
+<div class="cards-container row justify-content-md-center">
+    <div class="card population-card column">
+        <fa-icon [icon]="faUsers" class="card-icons"></fa-icon>
+        <h4 class="heading-center">Population</h4>
+        <h2 class="card-data">32586238</h2>
+    </div>
+    <div class="card vaccines-card column">
+        <fa-icon [icon]="faSyringe" class="card-icons"></fa-icon>
+        <h4 class="heading-center">Vaccines Administered</h4>
+        <h2 class="card-data">8356872894</h2>
+    </div>
+    <div class="card fully-card column">
+        <fa-icon [icon]="faUserCheck" class="card-icons"></fa-icon>
+        <h4 class="heading-center">Fully Vaccinated</h4>
+        <h2 class="card-data">8356872894</h2>
+    </div>
+    <div class="card partial-card column">
+        <fa-icon [icon]="faUserClock" class="card-icons"></fa-icon>
+        <h4 class="heading-center">Partially Vaccinated</h4>
+        <h2 class="card-data">8356872894</h2>
+    </div>
+</div>

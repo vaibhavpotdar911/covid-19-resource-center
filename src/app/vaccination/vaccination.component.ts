@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faSyringe, faUsers, faGlobe, faUserClock, faUserCheck } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-vaccination',
@@ -7,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VaccinationComponent implements OnInit {
   title = 'Vaccination';
+  faSyringe = faSyringe;
+  faUsers = faUsers;
+  faGlobe = faGlobe;
+  faUserClock = faUserClock;
+  faUserCheck = faUserCheck;
   constructor() { }
 
   ngOnInit(): void {
