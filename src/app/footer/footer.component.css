@@ -1,0 +1,39 @@
+.footer-container{
+    background-color: rgba(26,32,44,255);
+    height: 120px;
+}
+
+.logo{
+    width: 60px;
+    padding: 10px;
+}
+
+.heading{
+    font-size: 1.1rem;
+    color: white;
+}
+
+.footer-heading{
+    color: rgba(90, 107, 143, 1);
+    margin-left: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.spacer{
+    flex: 1 1 auto;
+}
+
+.footer-links{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10%;
+}
+
+.link {
+    color: rgba(90, 107, 143, 1);
+    margin-left: 10px;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: large;
+}

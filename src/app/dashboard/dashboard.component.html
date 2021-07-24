@@ -14,7 +14,7 @@
             <fa-icon [icon]="faArrowUp"></fa-icon>
             <span class="card-data new-data-white"> {{ new_confirmed }}</span>
         </div>
-        
+
     </div>
     <div class="card active-card column">
         <fa-icon [icon]="faPlusSquare" class="card-icons"></fa-icon>
@@ -42,5 +42,65 @@
             <fa-icon [icon]="faArrowUp"></fa-icon>
             <span class="card-data new-data-white"> {{ new_deaths }}</span>
         </div>
+    </div>
+</div>
+
+<div class="breadcrumbs breadcrumbs-2">
+    <fa-icon [icon]="faFlag" class="card-icons"></fa-icon>
+    <span class="breadcrumb-label">Countrywise Coronavirus Data</span>
+</div>
+
+<div class="input-container">
+    <label for="search" class="search-label">Search: </label>
+    <input class="form-control" type="text" name="search" placeholder="Enter the Country..." [(ngModel)]="filter">
+</div>
+
+<div class="table-container">
+    <table class="country-table">
+        <thead>
+            <tr>
+                <th class="table-borders table-headers">#</th>
+                <th class="table-borders table-headers">Flag</th>
+                <th class="table-borders table-headers" (click)="sort('name')">
+                    <span>Country</span>
+                </th>
+                <th class="table-borders table-headers">Confirmed Cases</th>
+                <th class="table-borders table-headers">New Cases</th>
+                <th class="table-borders table-headers">Active Cases</th>
+                <th class="table-borders table-headers">Recovered Cases</th>
+                <th class="table-borders table-headers">New Recovered</th>
+                <th class="table-borders table-headers">Deaths</th>
+                <th class="table-borders table-headers">New Deaths</th>
+                <th class="table-borders table-headers">Critical</th>
+                <th class="table-borders table-headers">Population</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr
+                *ngFor="let item of apiCountryData | orderBy: key : !reverse | filter: filter | paginate: { itemsPerPage: 10, currentPage: p }; let i = index">
+                <td class="table-borders bold-font">{{ i+1 }}</td>
+                <td class="table-borders flag-row"><img src="{{ item.countryInfo.flag }}" class="flags" alt=""></td>
+                <td class="table-borders"><a href="#" class="country-name">{{ item.country }}</a></td>
+                <td class="table-borders"><span class="bold-font">{{ item.cases }}</span></td>
+                <td class="table-borders"><span class="bold-font"><span *ngIf="item.todayCases!=0">+</span>{{
+                        item.todayCases }}</span></td>
+                <td class="table-borders"><span class="bold-font">{{ item.active }}</span> <span class="new-data">({{
+                        ((item.active/item.cases)*100).toFixed(2) }}%)</span></td>
+                <td class="table-borders"><span class="bold-font">{{ item.recovered }}</span><span class="new-data">({{
+                        ((item.recovered/item.cases)*100).toFixed(2) }}%)</span></td>
+                <td class="table-borders"><span class="bold-font"><span *ngIf="item.todayRecovered!=0">+</span>{{
+                        item.todayRecovered }}</span></td>
+                <td class="table-borders"><span class="bold-font">{{ item.deaths }}</span><span class="new-data">({{
+                        ((item.deaths/item.cases)*100).toFixed(2) }}%)</span></td>
+                <td class="table-borders"><span class="bold-font"><span *ngIf="item.todayDeaths!=0">+</span>{{
+                        item.todayDeaths }}</span></td>
+                <td class="table-borders bold-font">{{ item.critical }}<span class="new-data">({{
+                        ((item.critical/item.cases)*100).toFixed(2) }}%)</span></td>
+                <td class="table-borders bold-font">{{ item.population }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="paginator-container">
+        <pagination-controls class="paginator" (pageChange)="p = $event"></pagination-controls>
     </div>
 </div>

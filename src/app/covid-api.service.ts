@@ -8,7 +8,11 @@ export class CovidApiService {
 
   constructor(public _http: HttpClient) { }
 
-  public covidAPI() {
-    return this._http.get("https://corona-api.com/timeline");
+  public covidWorldwideAPI() {
+    return this._http.get("https://disease.sh/v3/covid-19/all");
+  }
+
+  public covidCountriesAPI() {
+    return this._http.get("https://disease.sh/v3/covid-19/countries");
   }
 }

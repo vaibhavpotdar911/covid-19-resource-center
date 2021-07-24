@@ -79,3 +79,83 @@
     color: rgba(255, 255, 255, 1);
 }
 
+.breadcrumbs-2 {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.input-container {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px;
+}
+
+.search-label{
+    padding-left: 10px;
+    color: rgba(45,55,72,0.8);
+    font-weight: 600;
+}
+
+.table-container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.country-table{
+    width: 100%;
+    text-align: left;
+    color: rgba(45,55,72,255);
+}
+
+.flag-row{
+    width: 40px;
+    height: 30px;
+}
+
+.bold-font {
+    font-size: medium;
+    font-weight: 600;
+}
+
+.table-borders{
+    border: 1px solid rgba(146, 146, 146, 0.2);
+    padding: 0px 10px 0px 10px;
+}
+
+.table-headers{
+    text-align: center;
+}
+
+.flags{
+    width: 75%;
+}
+
+.country-name{
+    text-decoration: none;
+    color: rgba(103,125,234,1);
+    font-size: medium;
+    text-align:start;
+}
+
+.new-data {
+    padding-left: 10px;
+    font-size: smaller;
+    font-weight: 300;
+}
+
+.chevron{
+    flex: 1 1 auto;
+}
+
+.up-icon {
+    height: 8px;
+}
+
+.paginator-container {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.paginator {
+    text-align: center;
+}
