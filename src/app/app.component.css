@@ -1,3 +1,7 @@
-/* body {
-    
-} */
+.index-low{
+    z-index: 1;
+}
+
+.index-high{
+    z-index: 999;
+}
